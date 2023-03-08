@@ -11,7 +11,6 @@
 .introducao-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   position: relative;
 }
 
@@ -29,10 +28,51 @@
 .introducao-container h1 {
   font-size: 4.5rem;
   line-height: 1.1;
+  margin-bottom: 30px;
 }
 
 .introducao-container p {
   font-size: 1.5rem;
   line-height: 1.2;
   color: #525252;
+}
+
+@media (max-width: 1000px) {
+  .introducao-container h1 {
+    font-size: 3.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 20px 30px;
+    gap: 40px;
+  }
+
+  .introducao-container::before {
+    position: initial;
+    width: 20px;
+    height: 6px;
+  }
+
+  .introducao-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .introducao-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .introducao img {
+    display: none;
+  }
 }

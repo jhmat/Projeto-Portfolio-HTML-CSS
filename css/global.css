@@ -92,6 +92,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: grab;
 }
 
 li {
