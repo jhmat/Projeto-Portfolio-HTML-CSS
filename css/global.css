@@ -84,3 +84,16 @@ video {
   border: 0;
   vertical-align: baseline;
 }
+
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: #141414;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
