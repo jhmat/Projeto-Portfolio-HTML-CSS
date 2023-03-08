@@ -1,0 +1,38 @@
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+  gap: 100px;
+  max-width: 1200px;
+}
+
+.introducao-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.introducao-container::before {
+  content: "";
+  width: 140px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -45px;
+  z-index: -1;
+}
+
+.introducao-container h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+}
+
+.introducao-container p {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #525252;
+}
