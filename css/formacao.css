@@ -152,6 +152,10 @@
     padding: 60px 20px;
   }
 
+  .formacao-container::after {
+    display: none;
+  }
+
   .formacao .subtitulo {
     color: #fff;
   }
