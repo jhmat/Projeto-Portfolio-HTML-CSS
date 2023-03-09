@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 2fr;
   align-items: start;
   margin: 0 auto;
-  padding: 60px 20px 60px;
+  padding: 60px 20px;
   gap: 100px;
   max-width: 1200px;
 }
@@ -32,7 +32,7 @@
 .empresa {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 70px;
+  gap: 10px 20px;
   padding: 20px;
   background: #f5f5f5;
   border-radius: 5px;
@@ -80,6 +80,7 @@
   gap: 10px;
 }
 .empresa-habilidades li {
+  display: block;
   font-size: 0.875rem;
   line-height: 1.4;
   padding: 5px 10px;
@@ -106,6 +107,7 @@
 
   .empresa-ano {
     position: initial;
+    width: initial;
     order: 1;
     font-weight: 700;
     text-align: left;
