@@ -10,6 +10,17 @@
   padding: 120px 20px;
   gap: 100px;
   max-width: 1200px;
+  position: relative;
+}
+
+.formacao-container::after {
+  content: "";
+  width: 140px;
+  height: 100px;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+  background: url("../img/detalhe.svg") no-repeat center;
 }
 
 .formacao .subtitulo {
@@ -35,8 +46,8 @@
 
 .graduacao {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between;
 }
 
 .graduacao li {
@@ -93,6 +104,7 @@
 
 .formacao-extra h3::before {
   content: "";
+  display: block;
   width: 24px;
   height: 24px;
   position: absolute;
@@ -154,7 +166,8 @@
   }
 
   .formacao-extra h3::before {
-    display: none;
+    position: static;
+    margin-bottom: 10px;
   }
 
   .cursos {
