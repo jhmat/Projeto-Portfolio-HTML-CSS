@@ -27,7 +27,7 @@
 
 .introducao-container h1 {
   font-size: 4.5rem;
-  line-height: 1.1;
+  line-height: 1.125;
   margin-bottom: 30px;
 }
 
@@ -39,7 +39,7 @@
 
 @media (max-width: 1000px) {
   .introducao-container h1 {
-    font-size: 3.8rem;
+    font-size: 4rem;
   }
 }
 
@@ -52,8 +52,8 @@
 
   .introducao-container::before {
     position: initial;
-    width: 20px;
-    height: 6px;
+    width: 30px;
+    height: 10px;
   }
 
   .introducao-container h1 {
@@ -69,7 +69,6 @@
 @media (max-width: 500px) {
   .introducao {
     grid-template-columns: 1fr;
-    justify-items: center;
   }
 
   .introducao img {

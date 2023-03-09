@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   padding: 40px 20px;
@@ -14,21 +15,21 @@
 }
 
 .menu a {
+  display: block;
   font-size: 1.125rem;
-  line-height: 3.3;
+  line-height: 1.1;
   color: #141414;
-  padding: 20px 10px;
+  padding: 10px 20px;
 }
 
 @media (max-width: 800px) {
   .header {
     flex-direction: column;
-    align-items: center;
     gap: 40px;
   }
 
   .menu a {
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
     border-radius: 5px;
   }
 }
